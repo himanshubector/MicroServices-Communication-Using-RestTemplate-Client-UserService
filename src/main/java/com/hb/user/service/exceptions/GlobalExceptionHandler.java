@@ -19,5 +19,4 @@ public class GlobalExceptionHandler
         return new ResponseEntity<ApiResponse>(response, HttpStatus.NOT_FOUND);
     }
 
-
 }

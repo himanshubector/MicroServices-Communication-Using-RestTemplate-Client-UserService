@@ -17,6 +17,7 @@ public class UserController
     @Autowired
     private UserService userService;
 
+
     // create user
 
     @PostMapping
@@ -39,7 +40,6 @@ public class UserController
     public ResponseEntity<User> getSingleUser(@PathVariable String userId)
     {
         User user = userService.getUser(userId);
-
         return ResponseEntity.ok(user);
     }
 
